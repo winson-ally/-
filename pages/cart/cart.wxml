@@ -1,0 +1,44 @@
+<view class="cart1">
+  <view class="btn">
+    <text>获取收货地址</text>
+  </view>
+</view>
+<view class="cart2">
+  <text>购物车</text>
+</view>
+<view class="cartdata">
+  <view class="datmenu" wx:key="id" wx:for="{{cartarr}}">
+    <view  class="check">
+      <checkbox checked="{{item.is_del}}" data-index="{{index}}"  data-item="{{item}}" bindtap="getitem" />
+    </view>
+    <view class="datatext">
+      <image src="{{item.goods_small_logo}}"  />
+      <view class="text">
+        <text class="goodname">{{item.goods_name}}</text>
+        <view class="btn2">
+          <text class="t1">￥{{item.goods_price}}</text>
+          <view class="bt2">
+            <view data-index="{{index}}" bindtap="unaddnum">-</view>
+            <text>{{shopnum[index]}}</text>
+            <view data-index="{{index}}" bindtap="addnum">+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cartfoot">
+  <view class="fle">
+    <checkbox bindtap="clickall" checked="{{selectedAll}}" /><text>全选</text>
+  </view>
+  <view class="frig">
+    <text class="all">合计:</text>
+    <view class="price">
+      <text>￥{{totalPrice}}</text>
+      <text>包含运费</text>
+    </view>
+  </view>
+  <view class="total">
+    <text>结算(1)</text>
+  </view>
+</view>

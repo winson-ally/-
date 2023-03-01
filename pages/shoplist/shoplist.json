@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "search": "/component/search/search",
+    "goods": "/component/goods/goods"
+  },
+  "navigationBarBackgroundColor": "#EB4458",
+  "navigationBarTitleText": "商品列表",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light",
+  "backgroundColor": "#EB4458"
+}

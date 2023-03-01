@@ -1,0 +1,26 @@
+<search></search>
+<view class="classfy">
+  <view class="leftmenu">
+    <scroll-view class="scroll" scroll-y>
+      <view bindtap="changeindex" data-index="{{index}}" class="{{leftindex==index?'lechild lefton':'lechild'}}" wx:for="{{leftarr}}" wx:key="id">
+        <text>{{item.cat_name}}</text>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="rightmenu">
+    <scroll-view class="scrollrig" scroll-y>
+      <view class="everrig" wx:for="{{rightarr}}" wx:key="id">
+        <view class="rigtitle">
+          <text>/</text> <text>{{item.cat_name}}</text> <text>/</text>
+        </view>
+        <view class="rigdata">
+          <view bindtap="getid" data-cid="{{item.cat_id}}" class="datamenu" wx:for="{{item.children}}" wx:key="id">
+            <image src="{{item.cat_icon}}" />
+            <text class="rigtext">{{item.cat_name}}</text>
+          </view>
+        </view>
+      </view>
+
+    </scroll-view>
+  </view>
+</view>

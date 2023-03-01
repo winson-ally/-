@@ -1,0 +1,26 @@
+<!--pages/home/home.wxml-->
+<search></search>
+<view class="imgshow">
+  <swiper class="swiper" autoplay circular interval="2000" indicator-dots>
+    <swiper-item wx:for="{{imgarr}}" wx:key="id">
+      <image src="{{item.image_src}}" />
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="home2">
+  <view wx:for="{{fl}}" wx:key="name">
+    <image src="{{item.image_src}}" />
+  </view>
+</view>
+
+<view class="home3" wx:for="{{floor}}" wx:key="name">
+  <image src="{{item.floor_title.image_src}}" />
+  <view class="floorshow">
+  <image wx:for="{{item.product_list}}" wx:key="name" src="{{item.image_src}}"/>
+  </view>
+</view>
+<view class="home4">
+  <view></view>
+  <view></view>
+</view>

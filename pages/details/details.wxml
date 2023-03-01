@@ -1,0 +1,49 @@
+<swiper class="imgshow" autoplay circular interval="2000" indicator-dots>
+  <swiper-item wx:key="id" wx:for="{{imgsrc}}" class="swiper">
+    <image data-bigimg="{{item.pics_big}}" bindtap="Scaleimg" src="{{item.pics_sma}}" />
+  </swiper-item>
+</swiper>
+<view class="detail1">
+  <text class="texttop">￥{{content.goods_price}}</text>
+  <view class="decontent">
+    <view class="textcont">
+      <text>{{content.goods_name}}</text>
+    </view>
+    <view data-item="{{content}}" bindtap="tosc" class="sc">
+      <i class="{{scshow}}" />
+      <text>收藏</text>
+    </view>
+  </view>
+</view>
+<view class="detail2">
+  <text class="imgtext">图文详情</text>
+  <view class="imgcont">
+    <rich-text nodes="{{details}}"></rich-text>
+  </view>
+</view>
+
+<view class="debar">
+  <view class="utils">
+    <view class="menu">
+      <i class="iconfont icon-kefu" />
+      <text>客服</text>
+    </view>
+    <view class="menu">
+      <i class="iconfont icon-yixianshi-" />
+      <text>分享</text>
+    </view>
+    <view class="menu">
+      <i class="iconfont icon-gouwuche" />
+      <text>购物车</text>
+      <text class="num">{{cartnum}}</text>
+    </view>
+  </view>
+  <view class="btn">
+    <view data-item="{{content}}" bindtap="addcart" class="btn1">加入购物车</view>
+    <view class="btn1">立即购买</view>
+  </view>
+</view>
+
+<view bindtap="hiddenimg" hidden="{{bgshow}}" class="bg">
+  <image src="{{bigImg}}" />
+</view>

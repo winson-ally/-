@@ -1,0 +1,25 @@
+.tabs{
+  display: flex;
+  height: 80rpx;
+  width: 100%;
+  justify-content: center;
+}
+.alltabs{
+  width: 98%;
+  height: 100%;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 5rpx 5rpx 5rpx rgba(0,0,0,0.2);
+}
+.diff{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+}
+.diffon{
+  color: red;
+  border-bottom: 5rpx solid red;
+}

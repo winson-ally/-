@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search":"/component/search/search"
+  },
+  "navigationBarBackgroundColor": "#EB4458",
+  "navigationBarTitleText": "商品分类",
+  "navigationBarTextStyle": "white"
+}

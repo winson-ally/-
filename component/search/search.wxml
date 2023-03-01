@@ -1,0 +1,5 @@
+<view class="search">
+  <view class="show">
+    <text class="text">搜索</text>
+  </view>
+</view>

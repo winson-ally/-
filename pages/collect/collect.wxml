@@ -1,0 +1,17 @@
+<tabs />
+<view class="clssfi">
+  <text data-index="0" bindtap="menuidx" class="{{menuindex==0?'menu menuon':'menu'}}">全部</text>
+  <text data-index="1" bindtap="menuidx" class="{{menuindex==1?'menu menuon':'menu'}}">正在热卖</text>
+  <text data-index="2" bindtap="menuidx" class="{{menuindex==2?'menu menuon':'menu'}}">即将上线</text>
+</view>
+<view class="alllist">
+  <view data-cid="{{item.goods_id}}" bindtap="todetails" class="sclist" wx:for="{{collectarr}}" wx:key="id">
+    <view class="imgsrc">
+    <image src="{{item.goods_small_logo}}"/>
+    </view>
+    <view class="scinfo">
+      <text>{{item.goods_name}}</text>
+      <text>￥{{item.goods_price}}</text>
+    </view>
+  </view>
+</view>

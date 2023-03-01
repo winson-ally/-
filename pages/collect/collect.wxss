@@ -1,0 +1,92 @@
+page {
+  background-color: #f2f2f2;
+}
+
+.clssfi {
+  height: 90rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+}
+
+.menu {
+  width: 140rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2rpx solid #ccc;
+  background-color: #fff;
+  margin-right: 20rpx;
+  font-size: 28rpx;
+}
+
+.menu:nth-child(1) {
+  width: 80rpx;
+}
+
+.menuon {
+  border: 2rpx solid red;
+  color: red;
+}
+
+.alllist {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.sclist {
+  width: 710rpx;
+  height: 220rpx;
+  background-color: #fff;
+  box-shadow: 2rpx 2rpx 5rpx rgba(0, 0, 0, .1),
+    -2rpx -2rpx 5rpx rgba(0, 0, 0, .1);
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.imgsrc {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgsrc image {
+  width: 170rpx;
+  height: 170rpx;
+}
+
+.scinfo {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.scinfo text:nth-child(1) {
+  width: 90%;
+  height: 80rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+
+.scinfo text:nth-child(2) {
+  width: 90%;
+  height: 80rpx;
+  color: red;
+  display: flex;
+  align-items: center;
+}

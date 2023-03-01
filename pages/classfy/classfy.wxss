@@ -1,0 +1,81 @@
+.classfy{
+  width: 100%;
+  height: 1030rpx;
+  display: flex;
+}
+.leftmenu{
+width: 28%;
+height: 100%;
+}
+.scroll{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.rightmenu{
+  width: 72%;
+  height: 100%;
+}
+.scrollrig{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.everrig{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+}
+.rigtitle{
+  width: 100;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+}
+.rigtitle text:nth-child(2){
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.rigtitle text:nth-child(1),.rigtitle text:nth-child(3){
+ color: #ccc;
+}
+.rigdata{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.datamenu{
+  width: 33%;
+  height: 160rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.datamenu image{
+  width: 90rpx;
+  height: 90rpx;
+}
+.rigtext{
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+.lechild{
+  width: 200rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.lefton{
+  color: #ff0000;
+  border-left: 5rpx solid #ff0000;
+}

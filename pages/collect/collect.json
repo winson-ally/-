@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "tabs":"/component/tabs/tabs"
+  },
+  "navigationBarBackgroundColor": "#EB4458",
+  "navigationBarTitleText": "收藏",
+  "navigationBarTextStyle": "white"
+}

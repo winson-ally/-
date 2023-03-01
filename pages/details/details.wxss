@@ -1,0 +1,146 @@
+.imgshow{
+  width: 100%;
+  height: 450rpx;
+}
+.swiper{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+.swiper image{
+  width: 400rpx;
+  height: 400rpx;
+}
+.detail1{
+  height: 180rpx;
+  width: 100%;
+}
+.texttop{
+  height: 80rpx;
+  display: flex;
+  color: red;
+  font-weight: bold;
+  align-items: center;
+  padding-left: 15rpx;
+}
+.decontent{
+  height: 100rpx;
+  border-top: 5rpx solid #ddd;
+  border-bottom: 5rpx solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.decontent .textcont{
+ flex: 0 0 620rpx;
+  height: 80rpx;
+  border-right: 4rpx solid #333;
+}
+.textcont text{
+  height: 100%;
+  width: 600rpx;
+  margin-left: 15rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+.sc{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.sc text{
+  font-size: 28rpx;
+}
+.debar{
+  display: flex;
+  width: 100%;
+  height: 90rpx;
+  position: fixed;
+  bottom: 0;
+}
+.utils{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  background-color: #fff;
+}
+.menu{
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  position: relative;
+}
+.btn{
+  display: flex;
+  width: 60%;
+  height: 100%;
+}
+.btn1{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.btn1:nth-child(1){
+  background-color: rgb(255,165,0);
+}
+.btn1:nth-child(2){
+  background-color: rgb(235,68,80);
+}
+.detail2{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-bottom: 90rpx;
+}
+.imgtext{
+  height: 90rpx;
+  color: red;
+  padding-left: 20rpx;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(0,0,0,.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg image{
+  width: 100%;
+  height: 750rpx;
+}
+.num{
+  position: absolute;
+  width: 24rpx;
+  height: 24rpx;
+  border-radius: 50%;
+  background-color: red;
+  right: 5rpx;
+  top: 5rpx;
+  color: #fff;
+  font-size: 22rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

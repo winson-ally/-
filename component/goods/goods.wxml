@@ -1,0 +1,18 @@
+<view class="good">
+  <view bindtap="getindex" class="sort">
+    <text data-index="0" class="{{0==textinde?'tx texton':'tx'}}">综合</text>
+    <text data-index="1" class="{{1==textinde?'tx texton':'tx'}}">销量</text>
+    <text data-index="2" class="{{2==textinde?'tx texton':'tx'}}">价格</text>
+  </view>
+  <view class="gdata">
+    <view class="everdata" data-id="{{item.goods_id}}" bindtap="todetail" wx:for="{{goodarr}}" wx:key="id">
+    <view class="imgsrc">
+      <image src="{{item.goods_small_logo}}" class="ig" />
+    </view>
+      <view class="text">
+        <text class="content">{{item.goods_name}}</text>
+        <text class="sole">￥{{item.goods_price}}</text>
+      </view>
+    </view>
+  </view>
+</view>

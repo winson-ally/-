@@ -1,0 +1,8 @@
+<view class="tabs">
+  <view class="alltabs">
+    <text data-index="0" bindtap="getindex" class="{{tabindex==0?'diff diffon':'diff'}}">商品收藏</text>
+    <text data-index="1" bindtap="getindex" class="{{tabindex==1?'diff diffon':'diff'}}">品牌收藏</text>
+    <text data-index="2" bindtap="getindex" class="{{tabindex==2?'diff diffon':'diff'}}">店铺收藏</text>
+    <text data-index="3" bindtap="getindex" class="{{tabindex==3?'diff diffon':'diff'}}">浏览足迹</text>
+  </view>
+</view>
